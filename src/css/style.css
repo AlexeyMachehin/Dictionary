@@ -79,9 +79,6 @@ body {
 .translate.learn__input.error::placeholder {
   color: red;
 }
-/* .translate.learn__input.error:focus::placeholder {
-  color: transparent;
-} */
 @keyframes slide {
   from {
    transform: translateX(-100px);
