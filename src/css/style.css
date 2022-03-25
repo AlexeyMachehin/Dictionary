@@ -70,7 +70,6 @@ body {
 } */
 
 .learning__word {
-  /* color: #26a69a; */
   animation: slide  .5s ease-in-out;
 }
 .translate.learn__input.correct::placeholder {
