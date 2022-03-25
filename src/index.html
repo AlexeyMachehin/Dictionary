@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title></title>
+  </head>
+  <body>
+    
+    
+    <div class="container-preloader">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- заголовок с кнопками "choose theme"(выпадающий список с темами), "learn all words by theme" -->
+      <div class="functions">
+        <!-- выпадающий список с темами -->
+        <button
+          class="dropdown-trigger choose-theme-button btn pulse"
+          data-target="dropdown1"
+        >
+          Choose theme<i class="material-icons right">arrow_drop_down</i>
+        </button>
+        <!-- <button href="#modal4" class="btn modal-trigger">
+          register and login
+        </button> -->
+        <ul class="dropdown-content" id="dropdown1">
+          <li
+            href="#modal3"
+            class="add-theme modal-trigger #e3f2fd blue lighten-5"
+          >
+            <a class="add-theme__text asd">add theme</a>
+          </li>
+          <ul class="dropdown-content__inner"></ul>
+        </ul>
+
+        <!-- учить слова по выбранной теме -->
+        <button
+          class="learn-button waves-light btn modal-trigger"
+          data-function="learn-all-words-by-theme"
+          href="#modal1"
+        >
+          learn all words by theme
+        </button>
+      </div>
+
+      <!-- окно со словами на выбранную тему -->
+      <div class="window card scrollspy">
+        <table class="highlight">
+          <thead>
+            <tr class="table-head-item"></tr>
+          </thead>
+          <tbody class="words-list"></tbody>
+        </table>
+      </div>
+
+      <!-- форма "learn all words by theme" -->
+      <form
+        name="LearnForm"
+        class="learn modal"
+        id="modal1"
+        data-function="learn"
+      >
+        <div class="translate-type">
+          <div class="translate-type__header">Russian-English</div>
+          <button
+            type="button"
+            class="change-language-button btn-floating btn-small waves-light #26a69a teal lighten-1"
+          >
+            <i class="material-icons">autorenew</i>
+          </button>
+        </div>
+        <div
+          class="learning__word learn__input flow-text"
+          data-function="learn__input"
+        ></div>
+        <input
+         
+          name="LearnInput"
+          placeholder="enter translate"
+          class="translate learn__input"
+          type="text"
+          data-function="translate"
+        />
+        <button
+          class="check waves-light btn"
+          data-function="check"
+          type="button"
+        >
+          check
+        </button>
+        <button
+          class="next__word waves-light btn"
+          data-function="next__word"
+          type="button"
+        >
+          skip
+        </button>
+        <button type="button" class="btn show-translate">show translate</button>
+      </form>
+
+      <!-- форма "добавить слово в текущую тему" -->
+      <form class="add-word modal" id="modal2" data-function="add-word">
+        <div class="add-word_header">add a word to the current theme</div>
+        <input class="enter-word" type="text" placeholder="enter word" />
+        <input
+          class="enter-translate"
+          type="text"
+          placeholder="enter translate"
+        />
+        <button type="button" class="add-button-form waves-light btn">
+          add
+        </button>
+      </form>
+
+      <!-- форма "добавить новую тему" -->
+      <form class="add-theme-form modal" id="modal3" data-function="add-theme">
+        <input
+          class="enter-new-theme"
+          type="text"
+          placeholder="enter new theme"
+        />
+        <button type="button" class="add-new-theme btn">add</button>
+      </form>
+
+      <!-- форма "регистрация и вход" -->
+      <div class="register-and-login modal" id="modal4">
+        <div class="register-and-login__container">
+          <form class="register-form">
+            <div class="register__header">REGISTERING A NEW USER</div>
+            <div class="input-field col s6">
+              <input
+               
+                id="register-name"
+                type="text"
+                class="validate"
+              />
+              <label for="register-name">Name</label>
+              <div class="input-field col s6">
+                <input id="register-email" type="email" class="validate" name="email" />
+                <label for="register-email">Email</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="register-password" type="password" class="validate" name="password" />
+                <label for="register-password">Password</label>
+              </div>
+              <button class="register-button btn" type="submit">add new user</button>
+            </div>
+          </form>
+          <form class="login-form">
+            <div class="register__header">LOGIN</div>
+            <div class="input-field col s6">
+              <input
+                
+                id="login-name"
+                type="text"
+                class="validate"
+              />
+              <label for="login-name">Name</label>
+              <div class="input-field col s6">
+                <input id="login-email" type="email" class="validate" name="email" />
+                <label for="login-email">Email</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="login-password" type="password" class="validate" name="password"/>
+                <label for="login-password">Password</label>
+              </div>
+              <button class="login-button btn" type="submit">login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

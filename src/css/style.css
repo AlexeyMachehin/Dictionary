@@ -1,0 +1,192 @@
+body {
+  background-color: azure;
+  
+}
+.container {
+  margin: 0 auto;
+  padding: 10px;
+  /* width: 1024px;
+  height: 768px; */
+  display: none;
+}
+.container-preloader{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.functions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.window.card.scrollspy {
+  margin-top: 30px ;
+  min-height: 340px ;
+
+  position: relative;
+  
+  padding: 5px;
+  background-image: url("../img/bg.png");
+}
+
+.learn-button.btn{
+  display: none;
+}
+
+.learn.modal {
+  padding: 20px;
+  width: 350px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: right;
+}
+/* .learn {
+  
+  border: 1px solid rgb(10, 10, 10);
+  position: absolute;
+  top: 63px;
+  right: 569px;
+  background-color: rgb(214, 234, 251);
+  padding: 10px;
+  display: none;
+}
+.learn.open {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+} */
+
+/* .learn__input {
+  border: 1px solid rgb(10, 10, 10);
+  height: 50px;
+  background-color: #fff;
+  width: 100%;
+} */
+
+.learning__word {
+  /* color: #26a69a; */
+  animation: slide  .5s ease-in-out;
+}
+.translate.learn__input.correct::placeholder {
+  color: #26a69a;
+}
+.translate.learn__input.error::placeholder {
+  color: red;
+}
+/* .translate.learn__input.error:focus::placeholder {
+  color: transparent;
+} */
+@keyframes slide {
+  from {
+   transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.add-word.modal{
+  padding: 20px;
+  width: 300px;
+}
+.add-word_header{
+  font-size: 25px;
+}
+.add-theme .add-theme__text{
+  color: #fff; 
+}
+.add-theme-form.modal{
+  padding: 20px;
+  width: 300px;
+}
+.add-theme__text.asd{
+  color: #26a69a;
+}
+
+.add-theme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.themes-list-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.theme-link{
+  width: 100%;
+}
+
+
+.theme-link{
+  width: 100%;
+}
+.btn.delete-theme{
+  border: none;
+  border-radius: 2px;
+  display: block;
+  height: 19px;
+  width: 42px;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-right: 15px;
+}
+
+.translate-type{
+  display: flex;
+  align-items: center;
+}
+.change-language-button{
+  margin-left: 5px;
+}
+
+.register-and-login__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-around
+}
+
+.register-form, .login-form{
+  border: 1px solid #26a69a;
+  border-radius: 2%;
+  padding: 10px;
+  
+}
+.register-form{
+  background-color: #f3e5f5;
+}
+.login-form{
+  background-color: #e3f2fd;
+}
+.register-and-login.modal{
+background-color: #fbe9e7 ;
+  max-height: 100%;
+}
+
+.register__header{
+  margin-bottom: 20px;
+  color: #26a69a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.btn.show-translate{
+  user-select: none;
+}
