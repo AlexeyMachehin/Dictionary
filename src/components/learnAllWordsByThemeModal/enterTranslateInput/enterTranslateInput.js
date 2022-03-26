@@ -1,0 +1,1 @@
+export let translate = document.querySelector(".translate"); //инпут с проверочным словом "enter translate" "введите перевод" внутри формы
