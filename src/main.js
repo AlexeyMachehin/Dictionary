@@ -527,12 +527,12 @@ function getKeyByValue(object, value) {
 function check() {
   if (currentLanguage) {
     Object.keys(wordsCopy)[index] === translate.value.toLowerCase()
-      ? showIsCorrectResult()
+      ? showIsCorrectResult(translate.value.toLowerCase())
       : showIsWrongResult();
-  } else {
+  } else { 
     keyByValue = getKeyByValue(wordsCopy, translate.value.toLowerCase());
     Object.values(wordsCopy)[index] === translate.value.toLowerCase()
-      ? showIsCorrectResult()
+      ? showIsCorrectResult(keyByValue)
       : showIsWrongResult();
   }
 }
@@ -547,11 +547,11 @@ function gameOver() {
   changeLanguageButton.disabled = true;
 }
 
-function showIsCorrectResult() {
+function showIsCorrectResult(key) {
   // translate.disabled = true;
   translate.classList.add("correct");
   translate.setAttribute("placeholder", "CORRECT");
-  delete wordsCopy[translate.value.toLowerCase()];
+  delete wordsCopy[key];
   translate.value = "";
   translate.classList.remove("error");
   translate.focus();
