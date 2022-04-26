@@ -31,6 +31,7 @@ body {
 
 .learn-button.btn {
   display: none;
+  white-space: nowrap;
 }
 .choose-theme-button {
   margin-right: 15px;
