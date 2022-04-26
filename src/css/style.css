@@ -1,13 +1,12 @@
 body {
   background-color: azure;
-  
 }
 .container {
   margin: 0 auto;
   padding: 10px;
   display: none;
 }
-.container-preloader{
+.container-preloader {
   width: 100%;
   height: 100%;
   display: flex;
@@ -21,17 +20,20 @@ body {
 }
 
 .window.card.scrollspy {
-  margin-top: 30px ;
-  min-height: 340px ;
+  margin-top: 30px;
+  min-height: 340px;
 
   position: relative;
-  
+
   padding: 5px;
   background-image: url("../img/bg.png");
 }
 
-.learn-button.btn{
+.learn-button.btn {
   display: none;
+}
+.choose-theme-button {
+  margin-right: 15px;
 }
 
 .learn.modal {
@@ -68,7 +70,7 @@ body {
 } */
 
 .learning__word {
-  animation: slide  .5s ease-in-out;
+  animation: slide 0.5s ease-in-out;
 }
 .translate.learn__input.correct::placeholder {
   color: #26a69a;
@@ -78,51 +80,49 @@ body {
 }
 @keyframes slide {
   from {
-   transform: translateX(-100px);
+    transform: translateX(-100px);
   }
   to {
     transform: translateX(0);
   }
 }
-.add-word.modal{
+.add-word.modal {
   padding: 20px;
   width: 300px;
 }
-.add-word_header{
+.add-word_header {
   font-size: 25px;
 }
-.add-theme .add-theme__text{
-  color: #fff; 
+.add-theme .add-theme__text {
+  color: #fff;
 }
-.add-theme-form.modal{
+.add-theme-form.modal {
   padding: 20px;
   width: 300px;
 }
-.add-theme__text.asd{
+.add-theme__text.asd {
   color: #26a69a;
 }
 
-.add-theme{
+.add-theme {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.themes-list-item{
+.themes-list-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-.theme-link{
+.theme-link {
   width: 100%;
 }
 
-
-.theme-link{
+.theme-link {
   width: 100%;
 }
-.btn.delete-theme{
+.btn.delete-theme {
   border: none;
   border-radius: 2px;
   display: block;
@@ -137,40 +137,40 @@ body {
   margin-right: 15px;
 }
 
-.translate-type{
+.translate-type {
   display: flex;
   align-items: center;
 }
-.change-language-button{
+.change-language-button {
   margin-left: 5px;
 }
 
-.register-and-login__container{
+.register-and-login__container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
-.register-form, .login-form{
+.register-form,
+.login-form {
   border: 1px solid #26a69a;
   border-radius: 2%;
   padding: 10px;
-  
 }
-.register-form{
+.register-form {
   background-color: #f3e5f5;
 }
-.login-form{
+.login-form {
   background-color: #e3f2fd;
 }
-.register-and-login.modal{
-background-color: #fbe9e7 ;
+.register-and-login.modal {
+  background-color: #fbe9e7;
   max-height: 100%;
 }
 
-.register__header{
+.register__header {
   margin-bottom: 20px;
   color: #26a69a;
   display: flex;
@@ -178,9 +178,6 @@ background-color: #fbe9e7 ;
   align-items: center;
 }
 
-
-
-
-.btn.show-translate{
+.btn.show-translate {
   user-select: none;
 }
