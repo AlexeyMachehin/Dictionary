@@ -22,6 +22,14 @@
 
 ***
 
+## Запуск:
+Ввести в терминале команды:
+* git clone https://github.com/AlexeyMachehin/Dictionary.git
+* npm install
+* npm run start
+
+***
+
 ## Стек технологий:
 * Webpack
 * Material-JS
