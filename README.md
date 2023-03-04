@@ -38,5 +38,5 @@
 
 ## Превью:
 
-![image](https://user-images.githubusercontent.com/99137228/222430328-4e0b8370-f6e9-4dbc-98f0-384e93f4ef3a.png)
-![image](https://user-images.githubusercontent.com/99137228/222430412-bd78e02b-0770-4d3a-b6b1-d5d3a876224d.png)
+![словарь](https://user-images.githubusercontent.com/99137228/222928940-a74944b3-e9ff-44aa-b7ab-80c6a00ed3a1.gif)
+
